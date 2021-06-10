@@ -1,6 +1,7 @@
 const {readFileSync, writeFileSync} = require('fs');
 const {sync: glob} = require('glob');
-const {Logger, LogLevel, colorEmojiConfig} = require('plop-logger');
+const {Logger, LogLevel} = require('plop-logger');
+const {colorEmojiConfig} = require('plop-logger/lib/extra/colorEmojiConfig');
 
 Logger.config = colorEmojiConfig;
 const logger = Logger.getLogger('icons');
